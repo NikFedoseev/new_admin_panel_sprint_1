@@ -30,7 +30,7 @@ if __name__ == '__main__':
         'dbname': os.environ.get('DB_NAME'),
         'user': os.environ.get('DB_USER'),
         'password': os.environ.get('DB_PASSWORD'),
-        'host': '127.0.0.1',
+        'host': os.environ.get('DB_HOST'),
         'port': os.environ.get('DB_PORT')
     }
     with sqlite3.connect('db.sqlite') as sqlite_conn, psycopg2.connect(**dsl, cursor_factory=DictCursor) as pg_conn:
