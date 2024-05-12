@@ -1,5 +1,6 @@
 __pycache__
 .venv
+.venv_sqlite_to_postgres
 .vscode
 .env
 .python-version
